@@ -10,24 +10,27 @@ header {
 p {
   padding: 10px;
 }
-.nav {
+i {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+#nav {
   width: 100%;
-  background-color: teal;
+  background-color: black;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+
   align-items: center;
+  font-size: 1.3rem;
+  color: white;
 }
 #nav-right li,
 #nav-left li {
   display: inline;
   margin: 5px;
-  background-color: thistle;
 }
 #nav-right ul {
   flex: 1;
-  justify-self: flex-end;
-  background-color: tomato;
 }
 #nav-left {
   margin-right: 100px;
@@ -36,40 +39,27 @@ p {
   border: 1px solid black;
 }
 #section2 {
-  background-color: violet;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   height: 300px;
   padding: 0;
   margin: 0;
-  background-image: url(https://cdn.artphotolimited.com/images/5805227412eeb3002fbce016/1000x1000/new-york-skyline-black-and-white.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
 }
 #section2-list {
   position: absolute;
   align-self: center;
-  padding-left: 30px;
-  padding-left: 150px;
+  margin: 30px;
+  font-size: 1.5rem;
+  border: 2px solid black;
 }
-#section2-list p {
-  padding: 20px 0 20px 0;
-}
+
 #section3 {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
-#section3-left {
-  width: 45%;
 
-  float: left;
-}
-#section3-right {
-  width: 45%;
-  float: right;
-}
 #section4 {
   clear: both;
   width: 80%;
@@ -95,24 +85,22 @@ p {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 60px;
-  padding-left: 140px;
 }
 #section5 h3 {
   width: 100%;
 }
 
-#section5-left,
-#section5-right {
+#section5 a {
   display: flex;
   flex-wrap: wrap;
   background-color: white;
   align-content: center;
   justify-content: space-between;
-  width: 500px;
-  height: 200px;
+  width: 100%;
+  margin: 10px;
+  height: fit-content;
   border: 1px solid gray;
-  margin-right: 40px;
+
   color: black;
 }
 #section5-left p,
