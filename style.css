@@ -1,0 +1,144 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vw;
+}
+header {
+  width: 100%;
+}
+p {
+  padding: 10px;
+}
+.nav {
+  width: 100%;
+  background-color: teal;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav-right li,
+#nav-left li {
+  display: inline;
+  margin: 5px;
+  background-color: thistle;
+}
+#nav-right ul {
+  flex: 1;
+  justify-self: flex-end;
+  background-color: tomato;
+}
+#nav-left {
+  margin-right: 100px;
+}
+#cardtabs {
+  border: 1px solid black;
+}
+#section2 {
+  background-color: violet;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+  background-image: url(https://cdn.artphotolimited.com/images/5805227412eeb3002fbce016/1000x1000/new-york-skyline-black-and-white.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#section2-list {
+  position: absolute;
+  align-self: center;
+  padding-left: 30px;
+  padding-left: 150px;
+}
+#section2-list p {
+  padding: 20px 0 20px 0;
+}
+#section3 {
+  margin: 0 auto;
+  width: 80%;
+}
+#section3-left {
+  width: 45%;
+
+  float: left;
+}
+#section3-right {
+  width: 45%;
+  float: right;
+}
+#section4 {
+  clear: both;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#section4-1,
+#section4-2,
+#section4-3 {
+  width: 31%;
+}
+#section4 p {
+  padding-left: 0;
+  padding-right: 10px;
+}
+#section4 span {
+  border-bottom: 2px solid gray;
+}
+#section5 {
+  background-color: #f6f6f6;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px;
+  padding-left: 140px;
+}
+#section5 h3 {
+  width: 100%;
+}
+
+#section5-left,
+#section5-right {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  align-content: center;
+  justify-content: space-between;
+  width: 500px;
+  height: 200px;
+  border: 1px solid gray;
+  margin-right: 40px;
+  color: black;
+}
+#section5-left p,
+#section5-right p,
+#section5-left i,
+#section5-right i {
+  align-self: center;
+}
+#section5 img {
+  padding-left: 20px;
+}
+#section6 {
+  width: 100%;
+  clear: both;
+}
+#section6-left {
+  width: 50%;
+  float: left;
+  display: flex;
+}
+#section6-right {
+  float: right;
+  width: 50%;
+}
+#section6 a {
+  color: black;
+  border-bottom: 2px solid black;
+  float: left;
+}
