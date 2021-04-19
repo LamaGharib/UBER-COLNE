@@ -68,16 +68,18 @@ i {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0;
+  height: auto;
+  margin: 0 auto;
   padding: 0;
 }
-#out {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 #in {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 #card-info {
   padding: 32px;
@@ -131,24 +133,42 @@ i {
   border-radius: 0;
   padding: 14px 25px 14px 25px;
 }
+#card-img {
+  width: 100%;
+  height: 100%;
+}
 
 /* section2*/
-# #section2 {
+#section2 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   height: 300px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#section2-img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-image: url(img/HP-U4B-NYC-bkg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 80%;
+  background-position-y: 50%;
 }
 
-#section2-list {
-  position: absolute;
-  align-self: center;
-  margin: 30px;
-  font-size: 1.5rem;
-  border: 2px solid black;
+#section2-card {
+  width: 100%;
+  height: 100%;
+  padding: 56px 32px 56px 32px;
 }
+
+/*section3*/
 
 #section3 {
   margin: 0 auto;
