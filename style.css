@@ -141,7 +141,9 @@ i {
   font-weight: 500;
 }
 
-#drive a:hover {
+#drive a:hover,
+#food a:hover,
+#ride a:hover {
   border-bottom: 5px solid black !important;
 }
 
@@ -170,6 +172,9 @@ i {
 #section1 button {
   border-radius: 0;
   padding: 14px 25px 14px 25px;
+}
+#section1 button a {
+  border-bottom: none;
 }
 #card-img img {
   width: 100%;
@@ -273,6 +278,13 @@ i {
   color: black;
   border-bottom: 1px solid rgb(177, 171, 171);
   padding-bottom: 5px;
+  transition: all 0.5s;
+}
+
+#section3 a:hover,
+#section4 a:hover,
+#card-info a:hover #section3 a #section4 a #card-info a {
+  border-bottom: 3px solid black;
 }
 
 /*sectio5*/
@@ -315,7 +327,7 @@ i {
 }
 #section5-right:hover i,
 #section5-left:hover i {
-  transform: translateX(-10px) !important;
+  transform: translateX(+10px) !important;
 }
 
 /*section6*/
@@ -368,7 +380,8 @@ footer {
 footer a {
   color: white;
 }
-footer i {
+footer i,
+footer img {
   padding: 15px;
 }
 footer.col {
