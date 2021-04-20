@@ -106,12 +106,10 @@ i {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-
   border-bottom: 1px solid rgb(211, 205, 205);
   padding-left: 15px;
   font-size: 14px;
   line-height: 1rem;
-  font-weight: 500;
 }
 #ride,
 #drive,
@@ -146,6 +144,7 @@ i {
 #label i {
   padding: 0 0 15px 8px;
   font-weight: bolder;
+  font-size: 1.5rem;
 }
 
 #section1-bottom {
@@ -158,6 +157,7 @@ i {
 #section1 button {
   border-radius: 0;
   padding: 14px 25px 14px 25px;
+  margin-right: 30px;
 }
 #section1 button a {
   border-bottom: none;
@@ -263,6 +263,7 @@ i {
   border-bottom: 1px solid rgb(177, 171, 171);
   padding-bottom: 5px;
   transition: all 0.5s;
+  font-size: 18px;
 }
 
 #section3 a:hover,
@@ -295,7 +296,7 @@ i {
   flex-wrap: wrap;
   align-items: center;
   border: 1px solid rgb(179, 166, 166);
-  margin: 20px;
+  margin: 15px;
 }
 #section5 img {
   width: 110px;
@@ -309,8 +310,8 @@ i {
 i {
   transition: all 0.5s !important;
 }
-#section5-right:hover i,
-#section5-left:hover i {
+#section5-left:hover i,
+#section5-right:hover i {
   transform: translateX(+10px) !important;
 }
 
@@ -397,6 +398,9 @@ footer .col {
   color: gray;
   font-size: 0.9rem;
 }
+a:hover footer a {
+  color: gray !important;
+}
 
 @media only screen and (min-width: 600px) {
   #section1 span {
@@ -456,13 +460,18 @@ footer .col {
     justify-content: center;
   }
 
+  #ul-holder {
+    margin: 0 9px 0 9px;
+    padding: 0 45px 0 45px;
+  }
+
   #card {
-    width: 37%;
+    width: 39%;
     font-size: 16px;
 
     position: absolute;
     background-color: white;
-    margin: 70px 0 0 105px;
+    margin: 70px 0 0 175px;
   }
   #ride,
   #drive,
@@ -520,7 +529,10 @@ footer .col {
     padding-left: 0;
     font-size: 1.5rem;
   }
-  a:hover footer a {
-    color: gray !important;
+  footer img {
+    width: 160px;
+  }
+  .footer-bottom {
+    padding-left: 30px !important;
   }
 }
