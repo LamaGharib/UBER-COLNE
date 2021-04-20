@@ -1,8 +1,25 @@
+@import url(//db.onlinewebfonts.com/c/11469c307f0de6481e3a04cc5d54ae93?family=Uber+Move+Text);
+
+@font-face {
+  font-family: "Uber Move Text" !important;
+  src: url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.eot");
+  src: url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/11469c307f0de6481e3a04cc5d54ae93.svg#Uber Move Text")
+      format("svg") !important;
+}
 body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   height: 100vw;
+  font-size: 16px;
 }
 header {
   width: 100%;
@@ -30,32 +47,44 @@ button {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  padding: 12px 0 12px 0px;
+  align-self: center;
+}
+#ul-holder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
   padding: 0 24px 0 24px;
+  align-self: center;
 }
 #nav-mid {
   display: flex;
   flex-wrap: wrap;
   flex: 2;
   margin-left: 24px;
-  padding: 0;
+  margin: 0;
+  align-self: center;
 }
 #logo {
   justify-self: flex-start;
   align-self: center;
   font-size: 1.5rem;
-  padding: 0;
   margin: 0;
 }
 #nav-right {
   justify-self: flex-end;
-
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  margin: 0;
 }
 #nav li {
   display: inline;
   padding: 0;
+  margin: 0;
 }
 
 i {
@@ -84,16 +113,18 @@ i {
 #card-info {
   padding: 32px;
   margin: 0 auto;
+  line-height: 2rem;
 }
 #label {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgb(211, 205, 205);
   padding-left: 15px;
   font-size: 14px;
   line-height: 1rem;
+  font-weight: 500;
 }
 #ride,
 #drive,
@@ -103,7 +134,17 @@ i {
   align-items: center;
   justify-content: center;
   width: 105px;
+  transition: all 0.5s ease-in-out !important;
 }
+#section1 h2 {
+  margin: 0;
+  font-weight: 500;
+}
+
+#drive a:hover {
+  border-bottom: 5px solid black !important;
+}
+
 #label a {
   padding-bottom: 10px;
   color: black;
@@ -113,29 +154,29 @@ i {
   height: 105px;
   padding: 18px 12px 20px 12px;
   font-size: 14px;
-  font-weight: bolder;
 }
 #label i {
-  padding-bottom: 15px;
+  padding: 0 0 15px 8px;
+  font-weight: bolder;
 }
+
 #section1-bottom {
   display: flex;
   flex-wrap: wrap;
-
   width: 100%;
   height: 100%;
 }
-#section1 span {
-  border-bottom: 1px solid gray;
-  margin-left: 30px;
-}
+
 #section1 button {
   border-radius: 0;
   padding: 14px 25px 14px 25px;
 }
-#card-img {
+#card-img img {
   width: 100%;
   height: 100%;
+}
+#card-img {
+  width: 100%;
 }
 
 /* section2*/
@@ -149,8 +190,6 @@ i {
   overflow: hidden;
 }
 #section2-img {
-  display: block;
-
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -169,20 +208,30 @@ i {
 }
 
 /*section3*/
-
 #section3 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#section3-container {
   margin: 0 auto;
   width: 100%;
-  padding: 0 24px 40px 24px;
+  height: 100%;
+
   clear: both;
 }
 
 #section3 h4 {
+  padding: 0 24px 40px 24px;
+  font-size: 2.5rem;
+  font-weight: 500;
   margin: 0;
-  padding: 0 0 40px 0;
 }
-#section3-left {
-  padding-bottom: 20px;
+#section3-left,
+#section3-right {
+  padding: 30px;
   float: left;
 }
 #section3 span {
@@ -193,12 +242,13 @@ i {
 
 #section4 {
   clear: both;
-  width: 100%;
-  margin: 0 auto;
+
+  margin: 0;
   padding: 0;
 }
-#section4-conatiner {
+#section4-container {
   width: 100%;
+  height: 100%;
   margin: 0;
   padding: 40px 24px 40px 24px;
 }
@@ -206,66 +256,245 @@ i {
 #section4-2,
 #section4-3 {
   width: 100%;
+  min-height: 300px;
   padding-bottom: 30px;
   float: left;
 }
-#section4 p {
-  padding-left: 0;
-  padding-right: 10px;
+#section4 h5 {
+  font-weight: 400;
 }
 #section4 span {
   border-bottom: 2px solid gray;
 }
 
+#section3 a,
+#section4 a,
+#card-info a {
+  color: black;
+  border-bottom: 1px solid rgb(177, 171, 171);
+  padding-bottom: 5px;
+}
+
 /*sectio5*/
 
-#section5 {
+#section5-container {
   background-color: #f6f6f6;
   width: 100%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  padding: 0 24px 0 24px;
+  background-color: #f4f4f4;
 }
-#section5 h3 {
+#section5 h4 {
   width: 100%;
 }
-
-#section5 a {
-  display: flex;
-  flex-wrap: wrap;
+#section5-left,
+#section5-right {
+  width: 100%;
+  height: 116px;
   background-color: white;
-  align-content: center;
-  justify-content: space-between;
-  width: 100%;
-  margin: 10px;
-  height: fit-content;
-  border: 1px solid gray;
-
-  color: black;
-}
-#section5-left p,
-#section5-right p,
-#section5-left i,
-#section5-right i {
-  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid rgb(179, 166, 166);
+  margin: 20px;
 }
 #section5 img {
-  padding-left: 20px;
+  width: 110px;
+  padding: 15px;
+  align-self: flex-start;
 }
+#section5 h5 {
+  flex: 1;
+  font-weight: 500px;
+}
+i {
+  transition: all 0.5s !important;
+}
+#section5-right:hover i,
+#section5-left:hover i {
+  transform: translateX(-10px) !important;
+}
+
+/*section6*/
+
 #section6 {
   width: 100%;
+  height: auto;
+  clear: both;
+  padding: 40px 24px 40px 24px;
+}
+#section6-left,
+#section6-right {
+  display: flex;
+  flex-wrap: wrap;
+
+  height: auto;
+  width: 100%;
+
+  justify-content: flex-start;
   clear: both;
 }
-#section6-left {
-  width: 50%;
+#section6-left h4,
+#section6-right h4 {
   float: left;
-  display: flex;
+  margin-right: 10px;
+  flex: 1;
+  border-bottom: 1px solid gray;
+  padding-bottom: 20px;
 }
-#section6-right {
+#section6-left i,
+#section6-right i {
+  padding: 35px 0 12.7px;
   float: right;
-  width: 50%;
 }
-#section6 a {
-  color: black;
-  border-bottom: 2px solid black;
-  float: left;
+
+/* footer*/
+
+footer {
+  color: white;
+  background-color: black;
+  width: 100%;
+  padding: 40px 24px 40px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#footer-container {
+  width: 100%;
+}
+footer a {
+  color: white;
+}
+footer i {
+  padding: 15px;
+}
+footer.col {
+  flex: 1;
+}
+footer span {
+  margin: 10px;
+}
+footer p {
+  margin: 0;
+}
+footer .row,
+footer .col {
+  padding: 30px 12px 30px 12px;
+  line-height: 30px;
+}
+.footer-bottom,
+.footer-bottom a {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+@media only screen and (min-width: 600px) {
+  #section1 span {
+    margin-left: 30px;
+  }
+
+  #section3-container {
+    padding: 0 32px 65px 32px;
+  }
+  #section3-left,
+  #section3-right {
+    width: 48%;
+    float: left;
+    padding: 0;
+  }
+  #section3-left {
+    margin-right: 25px;
+  }
+  #section3 img {
+    width: 100%;
+  }
+  #section3 h4 {
+    padding-left: 30px;
+  }
+  #section4 {
+    height: auto;
+  }
+
+  #section4-container {
+    padding: 56px 32px 56px 23px;
+    margin: 0;
+    height: 100%;
+  }
+  #section4-1,
+  #section4-2,
+  #section4-3 {
+    width: 50%;
+    padding-right: 40px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #label a {
+    padding-top: 25px;
+    justify-content: center;
+  }
+
+  #card {
+    width: 37%;
+    font-size: 16px;
+
+    position: absolute;
+    background-color: white;
+    margin: 70px 0 0 105px;
+  }
+  #ride,
+  #drive,
+  #ride {
+    flex: 1;
+  }
+  #section1 span {
+    margin: 0;
+  }
+  #section2-card {
+    padding-left: 105px;
+  }
+  #section3-container,
+  #section4 {
+    margin: 0 73px;
+  }
+  #section3-left {
+    margin-right: 48px;
+  }
+  #section3 h4 {
+    margin: 0 80px;
+  }
+
+  #section4-1,
+  #section4-2,
+  #section4-3 {
+    width: 31.3%;
+  }
+
+  #section5-container {
+    padding: 65px;
+  }
+  #section5-left,
+  #section5-right {
+    width: 45%;
+    height: 180px;
+    margin-left: 30px;
+  }
+  #section5 img {
+    align-self: center;
+    width: 180px;
+  }
+  #section5 h4 {
+    padding-left: 32px;
+  }
+  footer i {
+    padding-left: 0;
+    font-size: 1.5rem;
+  }
+  a:hover footer a {
+    color: gray !important;
+  }
 }
