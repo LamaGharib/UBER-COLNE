@@ -147,6 +147,7 @@ i {
   border-radius: 0;
   padding: 14px 25px 14px 25px;
   margin-right: 30px;
+  margin-top: 5px;
 }
 #section1 button a {
   border-bottom: none;
@@ -188,6 +189,10 @@ i {
 }
 #section2 h3 {
   margin-top: 0;
+}
+#section2-card button {
+  margin-top: 20px;
+  border-radius: 0;
 }
 
 /*section3*/
