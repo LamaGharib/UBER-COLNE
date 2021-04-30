@@ -36,7 +36,7 @@ a {
   padding: 12px 0 12px 0px;
   align-self: center;
 }
-#ul-holder {
+.ul-holder {
   width: 100%;
   height: 100%;
   display: flex;
@@ -44,23 +44,28 @@ a {
   padding: 0 24px 0 24px;
   align-self: center;
 }
-#nav-mid {
+.nav-mid {
   display: flex;
   flex-wrap: wrap;
   flex: 2;
   margin-left: 24px;
   align-self: center;
 }
-#logo {
+.nav-mid a,
+.nav-right a {
+  padding: 10px 12px 10px 12px;
+}
+.logo {
   justify-self: flex-start;
   align-self: center;
   font-size: 1.5rem;
 }
-#nav-right {
+.nav-right {
   justify-self: flex-end;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  align-self: center;
 }
 #nav li {
   display: inline;
@@ -69,10 +74,13 @@ a {
 i {
   padding: 5px;
 }
+.sign-up {
+  border-radius: 20px;
+}
 
 /* section1*/
 
-#section1 {
+.drive-or-deliver {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -80,18 +88,18 @@ i {
   margin: 0 auto;
 }
 
-#in {
+.in {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
 }
-#card-info {
+.card-info {
   padding: 32px;
   margin: 0 auto;
   line-height: 2rem;
 }
-#label {
+.card-label {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -100,9 +108,9 @@ i {
   font-size: 14px;
   line-height: 1rem;
 }
-#ride,
-#drive,
-#food {
+.ride,
+.drive,
+.food {
   display: flex;
   flex-flow: wrap;
   align-items: center;
@@ -110,18 +118,18 @@ i {
   width: 105px;
   transition: all 0.5s ease-in-out !important;
 }
-#section1 h2 {
+.drive-or-deliver h2 {
   font-weight: 500;
   margin: 0;
 }
 
-#drive a:hover,
-#food a:hover,
-#ride a:hover {
+.drive a:hover,
+.food a:hover,
+.ride a:hover {
   border-bottom: 5px solid black !important;
 }
 
-#label a {
+.card-label a {
   padding-bottom: 10px;
   display: inline-block;
   justify-content: center;
@@ -130,38 +138,38 @@ i {
   padding: 18px 12px 20px 12px;
   font-size: 14px;
 }
-#label i {
+.card-label i {
   padding: 0 0 15px 8px;
   font-weight: bolder;
   font-size: 1.5rem;
 }
 
-#section1-bottom {
+.card-bottom {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
 }
 
-#section1 button {
+.drive-or-deliver button {
   border-radius: 0;
   padding: 14px 25px 14px 25px;
   margin-right: 30px;
   margin-top: 5px;
 }
-#section1 button a {
+.drive-or-deliver button a {
   border-bottom: none;
 }
-#card-img img {
+.card-img img {
   width: 100%;
   height: 100%;
 }
-#card-img {
+.card-img {
   width: 100%;
 }
 
 /* section2*/
-#section2 {
+.uber-for-business {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -170,7 +178,7 @@ i {
   margin: 0 auto;
   overflow: hidden;
 }
-#section2-img {
+.uber-for-business-img {
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -182,28 +190,28 @@ i {
   background-position-y: 50%;
 }
 
-#section2-card {
+.uber-for-business-card {
   width: 100%;
   height: 100%;
   padding: 56px 32px 56px 32px;
 }
-#section2 h3 {
+.uber-for-business h3 {
   margin-top: 0;
 }
-#section2-card button {
+.uber-for-business-card button {
   margin-top: 20px;
   border-radius: 0;
 }
 
 /*section3*/
-#section3 {
+.safty {
   width: 100%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
 }
 
-#section3-container {
+.safty-container {
   margin: 0 auto;
   width: 100%;
   height: 100%;
@@ -211,67 +219,67 @@ i {
   clear: both;
 }
 
-#section3 h4 {
+.safty h4 {
   padding: 0 24px 40px 24px;
   font-size: 2.5rem;
   font-weight: 500;
   margin: 0;
 }
-#section3-left,
-#section3-right {
+.safty-left,
+.safty-right {
   padding: 30px;
   float: left;
 }
-#section3 span {
+.safty span {
   border-bottom: 1px solid gray;
 }
 
 /*section4*/
 
-#section4 {
+.about {
   clear: both;
   margin: 0;
   padding: 0;
 }
-#section4-container {
+.about-container {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 40px 24px 40px 24px;
 }
-#section4-1,
-#section4-2,
-#section4-3 {
+.about-us,
+.about-newsroom,
+.about-global {
   width: 100%;
   min-height: 300px;
   padding-bottom: 30px;
   float: left;
 }
-#section4 h5 {
+.about h5 {
   font-weight: 400;
 }
-#section4 span {
+.about span {
   border-bottom: 2px solid gray;
 }
 
-#section3 a,
-#section4 a,
-#card-info a {
+.safty a,
+.about a,
+.card-info a {
   border-bottom: 1px solid rgb(177, 171, 171);
   padding-bottom: 5px;
   transition: all 0.5s;
   font-size: 18px;
 }
 
-#section3 a:hover,
-#section4 a:hover,
-#card-info a:hover #section3 a #section4 a #card-info a {
+.safty a:hover,
+.about a:hover,
+.card-info a:hover .safty a .about a .card-info a {
   border-bottom: 3px solid black;
 }
 
 /*sectio5*/
 
-#section5-container {
+.download-container {
   background-color: #f6f6f6;
   width: 100%;
   height: auto;
@@ -281,11 +289,11 @@ i {
   padding: 0 24px 0 24px;
   background-color: #f4f4f4;
 }
-#section5 h4 {
+.download h4 {
   width: 100%;
 }
-#section5-left,
-#section5-right {
+.download-left,
+.download-right {
   width: 100%;
   height: 116px;
   background-color: white;
@@ -295,27 +303,27 @@ i {
   border: 1px solid rgb(179, 166, 166);
   margin: 15px;
 }
-#section5 img {
+.download img {
   width: 110px;
   padding: 15px;
   align-self: flex-start;
 }
-#section5 h5 {
+.download h5 {
   flex: 1;
   font-weight: 500px;
 }
 i {
   transition: all 0.5s !important;
 }
-#section5-left:hover i,
-#section5-right:hover i {
+.download-left:hover i,
+.download-right:hover i {
   transform: translateX(+10px) !important;
 }
 
 /*section6*/
 
-#section6-right,
-#section6-left {
+.register-right,
+.register-left {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -327,20 +335,20 @@ i {
   padding-bottom: 5px;
   transition: all 0.5s;
 }
-#section6-left:hover .section6-icon,
-#section6-right:hover .section6-icon {
+.register-left:hover .register-icon,
+.register-right:hover .register-icon {
   transform: translateX(10px) !important;
   cursor: pointer !important;
 }
 
-#section6 {
+.register {
   display: flex;
   width: 100%;
   height: auto;
   flex-wrap: wrap;
   padding: 0 24px 0 24px;
 }
-#register {
+.register-as {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -366,7 +374,7 @@ footer {
   flex-wrap: wrap;
   align-items: center;
 }
-#footer-container {
+.footer-container {
   width: 100%;
 }
 footer a {
@@ -400,122 +408,122 @@ a:hover footer a {
 }
 
 @media only screen and (min-width: 600px) {
-  #section1 span {
+  .drive-or-deliver span {
     margin-left: 30px;
   }
 
-  #section3-container {
+  .safty-container {
     padding: 0 32px 65px 32px;
   }
-  #section3-left,
-  #section3-right {
+  .safty-left,
+  .safty-right {
     width: 48%;
     float: left;
     padding: 0;
   }
-  #section3-left {
+  .safty-left {
     margin-right: 25px;
   }
-  #section3 img {
+  .safty img {
     width: 100%;
   }
-  #section3 h4 {
+  .safty h4 {
     padding-left: 30px;
   }
-  #section4 {
+  .about {
     height: auto;
   }
 
-  #section4-container {
+  .about-container {
     padding: 56px 32px 56px 23px;
     margin: 0;
     height: 100%;
   }
-  #section4-1,
-  #section4-2,
-  #section4-3 {
+  .about-us,
+  .about-newsroom,
+  .about-global {
     width: 50%;
     padding-right: 40px;
     font-size: 16px;
   }
 
-  #section6-left,
-  #section6-right {
+  .register-left,
+  .register-right {
     width: 45%;
     height: 150px;
     margin: 20px 0 10px 20px;
   }
-  #section6 {
-    pading: 20px;
+  .register {
+    padding: 20px;
     margin-bottom: 40px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  #label a {
+  .card-label a {
     padding-top: 25px;
     justify-content: center;
   }
 
-  #ul-holder {
+  .ul-holder {
     margin: 0 9px 0 9px;
     padding: 0 45px 0 45px;
   }
 
-  #card {
+  .drive-or-deliver-card {
     width: 39%;
     font-size: 16px;
     position: absolute;
     background-color: white;
     margin: 70px 0 0 175px;
   }
-  #ride,
-  #drive,
-  #ride {
+  .ride,
+  .drive,
+  .ride {
     flex: 1;
   }
-  #section1 span {
+  .drive-or-deliver span {
     margin: 0;
   }
-  #section2-card {
+  .uber-for-business-card {
     padding-left: 105px;
   }
-  #section3-container,
-  #section4 {
+  .safty-container,
+  .about {
     margin: 0 73px;
   }
-  #section3-left {
+  .ssafty-left {
     margin-right: 30px;
   }
-  #section3 h4 {
+  .safty h4 {
     margin: 0 80px;
   }
 
-  #section4-1,
-  #section4-2,
-  #section4-3 {
+  .about-us,
+  .about-newsroom,
+  .about-global {
     width: 31.3%;
   }
 
-  #section5-container {
+  .download-container {
     padding: 65px;
   }
-  #section5-left,
-  #section5-right {
+  .download-left,
+  .download-right {
     width: 45%;
     height: 180px;
     margin-left: 30px;
   }
-  #section5 img {
+  .download img {
     align-self: center;
     width: 180px;
   }
-  #section5 h4 {
+  .download h4 {
     padding-left: 32px;
   }
 
-  #section6-left,
-  #section6-right {
+  .register-left,
+  .register-right {
     width: 40%;
     margin-left: 80px;
   }
