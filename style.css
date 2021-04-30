@@ -404,7 +404,7 @@ footer .col {
   color: gray;
   font-size: 0.9rem;
 }
-a:hover {
+footer a:hover {
   color: gray !important;
 }
 
