@@ -333,11 +333,11 @@ i {
   width: 100%;
   height: auto;
   padding-bottom: 5px;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out !important;
 }
 .register-left:hover .register-icon,
 .register-right:hover .register-icon {
-  transform: translateX(10px) !important;
+  transform: translateX(20px) !important;
   cursor: pointer !important;
 }
 
@@ -379,6 +379,7 @@ footer {
 }
 footer a {
   color: white;
+  transition: all 0.1s ease-in-out !important;
 }
 footer i,
 footer img {
@@ -403,7 +404,7 @@ footer .col {
   color: gray;
   font-size: 0.9rem;
 }
-a:hover footer a {
+a:hover {
   color: gray !important;
 }
 
